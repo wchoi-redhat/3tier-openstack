@@ -1,0 +1,11 @@
+- hosts: localhost
+  become: yes
+  gather_facts: false
+  tasks:
+  - os_image:
+      cloud: ospcloud
+      name: rhel-guest
+      container_format: bare
+      disk_format: qcow2
+      state: present
+      filename: /root/small-rhel-cloud.qcow2
