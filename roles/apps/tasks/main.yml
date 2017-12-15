@@ -34,7 +34,7 @@
     port: 8080/tcp
     permanent: true
     state: enabled
-    immediate=yes
+    immediate: true
 - name: install apache
   yum:
     name: httpd
@@ -49,4 +49,4 @@
     service: http
     permanent: true
     state: enabled
-    immediate=yes
+    immediate: yes
